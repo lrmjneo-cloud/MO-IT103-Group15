@@ -6,10 +6,10 @@ The MotorPH Payroll System is a Java-based desktop payroll application that proc
 ## Team Details
 - **Group:** IT103 - Group 15
 - **Developers:**
-- Martinn Jhon Neo
-- Rodelconrad Aday
-- John Kenneth Racelis
-- Felix Bonoan
+  Martinn Jhon Neo
+  Rodelconrad Aday
+  John Kenneth Racelis
+  Felix Bonoan
 
 ## Features
 
