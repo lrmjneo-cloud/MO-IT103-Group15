@@ -1,0 +1,44 @@
+plugins {
+    id 'java'
+    id 'application'
+}
+
+group = 'motorph'
+version = '1.0.0'
+
+repositories {
+    mavenCentral()
+}
+
+java {
+    sourceCompatibility = JavaVersion.VERSION_25
+    targetCompatibility = JavaVersion.VERSION_25
+}
+
+dependencies {
+    // No external dependencies required - using only standard Java Swing
+}
+
+application {
+    mainClass = 'motorph.payroll.MainMotorPH'
+}
+
+tasks.named('jar') {
+    manifest {
+        attributes(
+            'Main-Class': 'motorph.payroll.MainMotorPH',
+            'Implementation-Title': 'MotorPH Payroll System',
+            'Implementation-Version': version
+        )
+    }
+}
+
+// Custom task to run the application with proper working directory
+tasks.register('runApp', JavaExec) {
+    group = 'application'
+    description = 'Run the MotorPH Payroll System'
+    
+    classpath = sourceSets.main.runtimeClasspath
+    mainClass = 'motorph.payroll.MainMotorPH'
+    workingDir = projectDir
+}
