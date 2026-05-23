@@ -1,11 +1,15 @@
-g# MotorPH Payroll System
+# MotorPH Payroll System
 
 ## Overview
 The MotorPH Payroll System is a Java-based desktop payroll application that processes employee attendance and salary records. It features a user-friendly interface with role-based access for payroll staff and employees.
 
 ## Team Details
 - **Group:** IT103 - Group 15
-- **Developer:** Martinn Jhon Neo
+- **Developers:**
+- Martinn Jhon Neo
+- Rodelconrad Aday
+- John Kenneth Racelis
+- Felix Bonoan
 
 ## Features
 
