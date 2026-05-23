@@ -1,7 +1,5 @@
 # Gradle
 build/
-.gradle/
-gradle/wrapper/gradle-wrapper.jar
 *.jar
 *.war
 *.ear
@@ -18,15 +16,6 @@ gradle/wrapper/gradle-wrapper.jar
 *.swp
 *.swo
 *~
-
-# Maven
-target/
-pom.xml.tag
-pom.xml.releaseBackup
-pom.xml.versionsBackup
-pom.xml.next
-release.properties
-dependency-reduced-pom.xml
 
 # OS
 .DS_Store
