@@ -1,0 +1,58 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Compile Java",
+            "type": "shell",
+            "command": "javac",
+            "args": [
+                "-d",
+                "build/classes",
+                "${fileDirname}/*.java"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "problemMatcher": ["$javac"],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        },
+        {
+            "label": "Compile All Java Files",
+            "type": "shell",
+            "command": "javac",
+            "args": [
+                "-d",
+                "build/classes",
+                "src/motorph/payroll/*.java"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "problemMatcher": ["$javac"],
+            "group": {
+                "kind": "build"
+            }
+        },
+        {
+            "label": "Run MotorPH",
+            "type": "shell",
+            "command": "java",
+            "args": [
+                "-cp",
+                "build/classes",
+                "motorph.payroll.MainMotorPH"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "group": {
+                "kind": "test",
+                "isDefault": true
+            },
+            "dependsOn": ["Compile All Java Files"]
+        }
+    ]
+}

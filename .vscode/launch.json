@@ -1,0 +1,33 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "MainMotorPH",
+            "request": "launch",
+            "mainClass": "MainMotorPH",
+            "projectName": "MO-IT103-Group15"
+        },
+        {
+            "type": "java",
+            "name": "MainMotorPH",
+            "request": "launch",
+            "mainClass": "motorph.payroll.MainMotorPH",
+            "projectName": "MO-IT103-Group15",
+            "cwd": "${workspaceFolder}",
+            "console": "integratedTerminal"
+        },
+        {
+            "name": "Launch MotorPH",
+            "type": "java",
+            "request": "launch",
+            "mainClass": "motorph.payroll.MainMotorPH",
+            "projectName": "MO-IT103-Group15",
+            "cwd": "${workspaceFolder}",
+            "console": "integratedTerminal",
+            "stopOnEntry": false,
+            "args": "",
+            "preLaunchTask": "Compile Java"
+        }
+    ]
+}
